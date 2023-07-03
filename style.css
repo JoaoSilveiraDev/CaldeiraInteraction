@@ -232,7 +232,6 @@ body{
   @media(max-width: 414px){
     body{
         overflow-x: hidden;
-        overflow-y: hidden;
     }
     .apresentacao{
         flex-direction: column;
