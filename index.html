@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caldeira Interaction</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/">Caldeira Interaction</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./HTML.html">HTML</a></li>
+          <li><a href="./CSS.html">CSS</a></li>
+          <li><a href="./JavaScript.html">JavaScript</a></li>
+          <li><a href="./Java.html">Java</a></li>
+          <li><a href="https://agenda-semanal-mwapdh4q7-joaosilveiradev.vercel.app/" id="ajuste">Planner</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__caixa">
+            <p class="apresentacao__caixa__texto">
+                Esse site tem o objetivo de informar a todos os alunos do <span>Nova Geração</span> sobre
+                o que os aguarda na trilha de programação da <span>Alura</span>. Fizemos um breve resumo
+                da cada área de conhecimento do curso e ao lado dos textos, deixamos um link para o projeto
+                final que está alocado no GitHub.
+            </p>
+        </section>
+        <section class="apresentacao__caixa">
+            <p class="apresentacao__caixa__texto">
+                O projeto do site foi idealizado e desenvolvido por dois alunos do Nova Geração: <span>Ândria Rosa</span> e 
+                <span>João Vitor da Cunha Silveira</span> com o intuito de mostrar para os alunos o quão completa
+                e contrutiva é essa oportunidade. Todo o <span>site</span> foi desenvolvido com os conhecimentos adquiridos 
+                das aulas fornecidas pelo projeto! 
+            </p>
+        </section>
+        <section class="apresentacao__caixa" id="feedback">
+            <img src="./programacao.png" alt="" class="rodape__imagem">
+            <form action="https://api.staticforms.xyz/submit" method="post" class="form">
+                <input type="text" name="name" placeholder="Seu nome...">
+                <input type="text" name="email" placeholder="Seu e-mail..." />
+                <textarea name="message" placeholder="Deixe sua menssagem..."></textarea>
+                <input type="text" name="honeypot" style="display:none">
+                <input type="hidden" name="accessKey" value="f60b5a28-e931-439c-90f4-2f8c4b5390e7">
+                <input type="hidden" name="subject" value="Contact us from - example.com" />
+                <input type="hidden" name="replyTo" value="@">
+                <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+                <input type="submit" value="Enviar" style="cursor: pointer;" class="botao"/>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">
+        <img src="./programacao.png" alt="engrenagem" class="rodape__imagem">
+        <p class="rodape__texto">O projeto que muda vidas...</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

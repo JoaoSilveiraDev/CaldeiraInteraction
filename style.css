@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+:root{
+    --cor-primaria: #01E746;
+    --cor-secundaria: rgb(19, 18, 18);
+    --cor-terciaria: rgb(230, 230, 230);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: auto;
+}
+  span{
+    color: var(--cor-primaria);
+  }
+  
+  a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .logo:hover{
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 50px 20px var(--cor-primaria);
+    background-color: #00ad34;
+    color: aliceblue;
+    border-radius: 45px;
+    cursor: none;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: var(--cor-secundaria);
+    height: 10vh;
+  }
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: var(--cor-primaria);
+    margin: 8px;
+    transition: 0.3s;
+  }
+  .apresentacao{
+    height: 80vh;
+    background-color: rgb(207, 209, 211);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .apresentacao__caixa{
+    height: 50%;
+    width: 30%;
+    background-color: var(--cor-secundaria);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #feedback{
+    height: 80%;
+    width: 30%;
+    background-color: var(--cor-secundaria);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  input{
+    padding: 10% 60%;
+    margin-top: 25%;
+    border-radius: 10px;
+    background-color: var(--cor-secundaria);
+    border: 1px solid rgb(0, 252, 0);
+    text-align: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    color: white;
+  }
+  textarea{
+    padding: 10% 60%;
+    margin-top: 25%;
+    border-radius: 10px;
+    background-color: var(--cor-secundaria);
+    border: 1px solid rgb(0, 252, 0);
+    text-align: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    color: white;
+  }
+  .apresentacao__caixa:hover{
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 50px 20px var(--cor-primaria);
+  }
+  .apresentacao__caixa__texto{
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    text-align: justify;
+    color: white;
+    margin: 0 15px;
+    font-size: 20px;
+  }
+  .btn{
+    border: 1px solid var(--cor-secundaria);
+    padding: 10px 35px;
+    border-radius: 10px;
+    color: var(--cor-secundaria);
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background-color: rgb(207, 209, 211);
+  }
+  .botao:hover{
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 50px 20px var(--cor-primaria);
+  }
+  .btn:hover{
+    background-color: var(--cor-primaria);
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 50px 20px var(--cor-primaria);
+  }
+  .rodape{
+    height: 10vh;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3%;
+  }
+  .rodape__imagem{
+    height: 50px;
+    width: 50px;
+  }
+  .rodape__texto{
+    font-family: 'Bad Script', cursive;
+    color: white;
+    font-size: 20px;
+  }
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 40vw;
+      height: 92vh;
+      background: var(--cor-secundaria);
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  @media(max-width: 414px){
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .apresentacao{
+        flex-direction: column;
+        height: 121vh;
+    }
+    .apresentacao__caixa{
+        width: 70%;
+        height: 15%;
+        margin-top: 10px;
+    }
+    .apresentacao__caixa__texto{
+        font-size: 14px;
+    }
+    input{
+      padding: 7% 50%;
+      margin-top: 16%;
+    }
+    #feedback{
+      width: 80%;
+      margin-bottom: 10px;
+    }
+    #ajuste{
+      margin-left: 5px;
+    }
+    #html{
+        height: 60%;
+    }
+    #css{
+        height: 60%;
+    }
+    #js{
+        height: 60%;
+    }
+    #java{
+        height: 60%;
+    }
+  }
+  @media(max-width: 1366px){
+    .apresentacao__caixa__texto{
+      font-size: 18px;
+    }
+    #feedback{
+      height: 90%;
+    }
+    .apresentacao__caixa{
+      height: 80%;
+    }
+  }
+  @media(max-width: 375px){
+    .apresentacao__caixa__texto{
+      font-size: 14px;
+    }
+    input{
+      padding: 5% 30%;
+      margin-top: 10%;
+    }
+    textarea{
+      padding: 10% 30%;
+      margin-top: 10%;
+    }
+    .botao{
+      margin-bottom: 10px;
+    }
+      .rodape__imagem{
+        margin-top: 10px;
+      }
+  }
